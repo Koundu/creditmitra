@@ -37,4 +37,37 @@ The Loan Application is a simple web-based form designed to allow users to apply
     - finalOffer.css belongs to confirmOffer.html
     - initialOffer.css belongs to staticOffer.html
     - login.css belongs to index.html
+Screenshots/Demo
+----------------
+
+### Screenshot of Loan Application Form
+
+Troubleshooting
+---------------
+
+*   **Form Not Displaying Properly**: Ensure you have included the correct paths for styles.css and that the file is located in the same directory as index.html.
+    
+*   **Form Submission**: This application does not have a backend, so form submission will not process any data. To implement submission functionality, server-side logic or JavaScript can be added.
+    
+
+Contributing
+------------
+
+*   **Report Issues**: If you encounter any issues, please open an issue on the repository.
+    
+*   **Submit Enhancements**: Fork the repository and submit a pull request with your enhancements or bug fixes.
+    
+
+License
+-------
+
+This project is licensed under the MIT License. See LICENSE for details.
+
+Contact
+-------
+
+***Author**: Koundinya G
+    
+***Email**: gangadharunikoundinya@gmail.com
+    
 
