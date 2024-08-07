@@ -31,9 +31,9 @@ The Loan Application is a simple web-based form designed to allow users to apply
 3. **Open the Application**:
     - Open index.html in your preferred web browser to view and interact with the application.
 ### Code Structure
-1.*** The Index Files are ***:
+1. *** The Index Files are ***:
     - index.html, staticoffer.html, confirmoffer.html
-2.*** The CSS Files are *** :
+2. *** The CSS Files are *** :
     - finalOffer.css belongs to confirmOffer.html
     - initialOffer.css belongs to staticOffer.html
     - login.css belongs to index.html
