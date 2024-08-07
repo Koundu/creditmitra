@@ -41,6 +41,8 @@ Screenshots/Demo
 ----------------
 
 ### Screenshot of Loan Application Form
+![image](https://github.com/user-attachments/assets/f24ce6bc-f5b3-4d44-9337-0469a4a179f2)
+
 
 Troubleshooting
 ---------------
