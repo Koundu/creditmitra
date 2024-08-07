@@ -1,0 +1,20 @@
+body{
+    background: rgba(193, 193, 193, 0.78);
+}
+
+.container{
+    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block: 5%;
+    border: 2px solid red;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 30%;
+    background-color: white;
+    box-shadow: 130px 130px 130px 130px rgba(139, 137, 137, 0.837);
+}
+.container > img{
+    width: 30%;
+    height: 30%;
+}
