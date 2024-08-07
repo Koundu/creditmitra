@@ -3,12 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/finalOffer.css"/>
     <link rel="icon" href="./assets/images.png"/>
-    <title>Document</title>
+    <title>Credit Mitra</title>
 </head>
 <body>
     <div class="container">
-        
-    </div>
+        <h2>Loan Offered:</h2>
+        <div class="loan-offer">
+            <div id="principal" class="slidecontainer">
+                <h4>Principal</h4>
+                <div class="slider-container">
+                    <input type="range" class="slider" id="mySlider" min="60000" max="100000" value="500" step="1">
+                    <div class="tooltip" id="sliderTooltip">50</div>
+                </div>
+                <div id="intrest">
+                    <p>Intrest rate</p>
+                    <p>16%</p>
+                </div>
+                <div>
+                    <p>Amount Credit to Account</p>
+                    <p>&#8377;93,000</p>
+                </div>
+                <div>
+                    <p>Total Amount Repayment</p>
+                    <p>&#8377;1,09,972.04</p>
+                </div>
+            </div>
+            <div id="emi" class="slidecontainer">
+                <h4>EMI</h4>
+                <div class="slider-container">
+                    <input type="range" class="slider" id="emislider" min="12" max="60" value="12" step="6">
+                    <div class="tooltip" id="emitooltip">50</div>
+                </div>
+                <div id="tenure">
+                    <p>Tenure in Months</p>
+                    <p>24</p>
+                </div>
+                <div>
+                    <p>Intrest Amount</p>
+                    <p>&#8377;16,972.04</p>
+                </div>
+                <div>
+                    <p>Processing Fee(Including GST)</p>
+                    <p>&#8377;0</p>
+                </div>
+            </div>
+        </div>
+        <p id="info"><span>&#x1F6C8;</span>  Installment amount displayed is rounded to the nearest whole number</p>
+        <script>
+            const slider = document.getElementById('mySlider');
+            const tooltip = document.getElementById('sliderTooltip');
+            const emislider = document.getElementById('emislider');
+            const emitooltip = document.getElementById('emitooltip');
+    
+            // Function to update the position and content of the tooltip
+            function updateTooltip() {
+                const value = slider.value;
+                tooltip.textContent = value;
+                const percent = (value - slider.min) / (slider.max - slider.min) * 100;
+                tooltip.style.left = `calc(${percent}% + (${5 - percent * 0.2}px))`;
+                const emivalue = emislider.value;
+                emitooltip.textContent = emivalue;
+                const emiPercent = (emivalue - emivalue.min) / (emislider.max - emislider.min) * 100;
+                emitooltip.style.left = `calc(${emiPercent}% + (${5 - emiPercent * 0.2}px))`;
+            }
+    
+            // Update tooltip when slider value changes
+            slider.addEventListener('input', updateTooltip);
+            emislider.addEventListener('input',updateTooltip);
+            // Show tooltip on hover
+            slider.addEventListener('mouseover', function() {
+                tooltip.style.opacity = 1;
+            });
+            emislider.addEventListener('mouseover',function(){
+                emitooltip.style.opacity = 1;
+            })
+
+    
+            // Hide tooltip when not hovering
+            emislider.addEventListener('mouseout',function(){
+                emitooltip.style.opacity = 0;
+            })
+            slider.addEventListener('mouseout', function() {
+                tooltip.style.opacity = 0;
+            });
+    
+            // Initialize tooltip position
+            updateTooltip();
+        </script>
+    </div> 
 </body>
 </html>
