@@ -1,18 +1,22 @@
 body{
-    background: rgba(193, 193, 193, 0.78);
+    background: url("../assets/blog_banner-personal-loan-app-desktop.jpg");
+    z-index: 1;
+    overflow: hidden;
 }
 
 .container{
+    position: relative;
     margin: 0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
+    padding:3px 0px 3px 0px;
     font-family: Arial, Helvetica, sans-serif;
     margin-block: 5%;
-    border: 2px solid red;
     text-align: center;
     justify-content: center;
     margin-inline: 30%;
     background-color: white;
-    box-shadow: 130px 130px 130px 130px rgba(139, 137, 137, 0.837);
+    box-shadow: 30px 30px 30px 30px rgba(139, 137, 137, 0.837);
+    z-index: 2;
+    filter: none;
 }
 .container > img{
     width: 30%;
