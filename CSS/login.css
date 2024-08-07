@@ -107,6 +107,38 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     cursor: pointer;
 }
+.login 
+> .social-login {
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+  
+.social-login > button{
+    width: 45px;
+    height: 45px;
+    background-color: inherit;
+    border: 1px #1B9BDC;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0.75px 1px #1B9BDC;
+}
+
+.social-login > button > #google,#rediff,#github,#yahoo{
+    width: 90%;
+    height: 90%;
+    position: center;
+    margin-inline: -10px;
+    margin-block: -10px;
+}
+
+.social-login > button > #linkedin{
+    width: 100%;
+}
 
 
 
